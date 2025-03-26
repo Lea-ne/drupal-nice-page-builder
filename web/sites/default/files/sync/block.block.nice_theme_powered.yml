@@ -1,0 +1,22 @@
+uuid: 742a6a6f-3cfa-45c7-9cfa-d6c7f484bf49
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - nice_theme
+_core:
+  default_config_hash: eYL19CLDyinGTWYQfBD1DswWzglEotE_kHnHx3AxTXM
+id: nice_theme_powered
+theme: nice_theme
+region: top_header
+weight: 0
+provider: null
+plugin: system_powered_by_block
+settings:
+  id: system_powered_by_block
+  label: 'Powered by Drupal'
+  label_display: '0'
+  provider: system
+visibility: {  }

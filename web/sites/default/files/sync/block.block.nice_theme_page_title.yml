@@ -1,0 +1,20 @@
+uuid: 0bfa2848-5ce1-4d7c-9b75-021a927f5ed8
+langcode: en
+status: true
+dependencies:
+  theme:
+    - nice_theme
+_core:
+  default_config_hash: 6aOgWsNTXjqrDm98TXSAjP6qd2nCijD1xw45MrnbK-Y
+id: nice_theme_page_title
+theme: nice_theme
+region: top_header
+weight: -5
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  label_display: '0'
+  provider: core
+visibility: {  }

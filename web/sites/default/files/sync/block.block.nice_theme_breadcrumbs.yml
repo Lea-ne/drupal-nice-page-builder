@@ -1,0 +1,22 @@
+uuid: a97ba020-fde5-4717-a5d3-16d59973e8ec
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - nice_theme
+_core:
+  default_config_hash: VhBzWb7lMRtIOg9G7VSw_0uopi-7zXeHq4vXqqV1HFE
+id: nice_theme_breadcrumbs
+theme: nice_theme
+region: breadcrumb
+weight: 0
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  label_display: '0'
+  provider: system
+visibility: {  }
