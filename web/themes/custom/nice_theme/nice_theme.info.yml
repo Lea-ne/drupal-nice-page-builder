@@ -6,7 +6,9 @@ base theme: bootstrap
 
 libraries:
   - bootstrap_subtheme/global-styling
-
+  - nice_theme/card_article
+  - nice_theme/card_article_background_image
+  
 regions:
   top_header: 'Top header'
   top_header_form: 'Top header form'

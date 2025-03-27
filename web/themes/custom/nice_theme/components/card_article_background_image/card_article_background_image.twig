@@ -1,0 +1,37 @@
+{# Card Article Component #}
+{% if link_url %} 
+  <a href="{{ link_url }}" class="{{ class }}" {% if media %}style="background-image: url('{{ media }}');"{% endif %}>
+{% else %}
+  <div class="{{ class }}" {% if media %}style="background-image: url('{{ media }}');"{% endif %}>
+{% endif %}
+
+<div class="card__container">
+  <div class="card__content">
+
+    {% if title %}
+      <h3 class="card__title">
+        {{ title }}
+      </h3>
+    {% endif %}
+    
+    {% if text %}
+      <div class="card__text">
+        {{ text }}
+      </div>
+    {% endif %}
+
+    {% if link_title %}
+      <div class="card__link article-link">
+        <p>{{ link_title }}</p>
+      </div>
+    {% endif %}
+
+  </div> 
+
+</div> 
+
+{% if link_url %}
+  </a> 
+{% else %}
+  </div> 
+{% endif %}

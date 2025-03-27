@@ -6,6 +6,21 @@ global-styling:
     component:
       css/style.css: { weight: 100 }
       css/colors.css: { weight: 99 }
+
+
+card_article:
+  version: 1.x
+  css:
+    component:
+      components/card_article/card_article.css: {}
+
+card_article_background_image:
+  version: 1.x
+  css:
+    component:
+      components/card_article_background_image/card_article_background_image.css: {}
+
+
 bootstrap:
   js:
     /libraries/popper.js/dist/umd/popper.min.js: { weight: -19 }

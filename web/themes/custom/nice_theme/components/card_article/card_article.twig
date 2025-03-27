@@ -1,0 +1,33 @@
+{# Card Article Component #}
+<div class="{{ class }}">
+  <div class="card__container">
+
+    {% if media %}
+      <div class="card__media">
+        <img src="{{ media }}" alt="{{ media_alt }}">
+      </div>
+    {% endif %}
+    
+    <div class="card__content">
+
+      {% if title %}
+        <h3 class="card__title">
+          {{ title }}
+        </h3>
+      {% endif %}
+      
+      {% if text %}
+        <div class="card__text">
+          {{ text }}
+        </div>
+      {% endif %}
+
+      {% if link %}
+        <div class="card__link article-link">
+          {{ link }}
+        </div>
+      {% endif %}
+
+    </div>
+  </div>
+</div> 

@@ -1,0 +1,69 @@
+.paragraph-card-article{
+  border: 1px solid black;
+}
+
+.paragraph-card-article .card__container{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.paragraph-card-article .card__media{
+  width: 100%;
+  height: 300px;
+}
+
+.paragraph-card-article .card__media img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.paragraph-card-article .card__content{
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding-top: 10px;
+}
+
+
+/*** General style move it when it will work **/
+:root {
+  --row-gap: 12px;
+  --border-radius: 8px;
+}
+
+body{
+  font-family: 'Poppins', sans-serif;
+}
+
+.paragraph-card .card__container{
+  padding: 15px;
+}
+
+/*** to make general! */
+.card__title, .card__link, p{
+  margin: 0;
+}
+
+
+/* card link for article */
+
+.card__link.article-link a, .card__link.article-link p{
+  padding-top: 12px;
+  margin-top: 12px;
+  border-top: 1px solid black;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: black;
+  text-decoration: none;
+}
+.card__link.article-link a::after, .card__link.article-link p::after{
+  content: "";
+  width: 24px;
+  height: 24px;
+  display: block;
+  background-color: rgb(180, 180, 180);
+}
