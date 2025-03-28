@@ -13,13 +13,13 @@
 {% set text = content.field_little_descritpion %}
 
 {# Define footer social media menu #}
-{% set social_media_menu_entity = content.field_social_media_menu_ref.0['#plain_text'] ?? '' %}
+{% set social_media_menu_entity = content.field_social_media_menu_ref.0['#entity'].id ?? '' %}
 {% if social_media_menu_entity is not empty %}
     {% set social_media_menu = drupal_menu(social_media_menu_entity) %}
 {% endif %}
 
 {# Define footer menu #}
-{% set footer_menu_entity = content.field_test.0['#plain_text'] ?? '' %}
+{% set footer_menu_entity = content.field_test.0['#entity'].id ?? '' %}
 {% if footer_menu_entity is not empty %}
     {% set footer_menu = drupal_menu(footer_menu_entity) %}
 {% endif %}

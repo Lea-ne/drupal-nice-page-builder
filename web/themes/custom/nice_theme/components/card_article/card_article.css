@@ -198,3 +198,131 @@ a, a:hover, a:focus{
 .clearfix::after{
   content: none;
 }
+
+
+
+
+
+/* test layout builder modal */
+/* Améliorer la lisibilité et la hiérarchie du formulaire */
+form.layout-builder-configure-block {
+  font-family: 'Poppins', sans-serif;
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 30px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Ombre pour l'effet modal */
+  max-width: 100%;
+  overflow: auto;
+}
+
+form.layout-builder-configure-block > .js-form-wrapper{
+  padding-bottom: 25px;
+}
+
+form.layout-builder-configure-block thead {
+  display: none;
+}
+
+form.layout-builder-configure-block tbody tr, form.layout-builder-configure-block tbody td {
+  border-color: transparent;
+  vertical-align: middle;
+}
+
+form.layout-builder-configure-block tbody tr.draggable > td:nth-of-type(2) {
+  padding: 15px;
+}
+
+form.layout-builder-configure-block .warning {
+  color: #d9534f; /* Rouge pour les avertissements */
+  font-weight: bold;
+}
+
+/* Styling des zones de saisie */
+form.layout-builder-configure-block textarea,
+form.layout-builder-configure-block input {
+  padding: 8px 12px;
+  font-size: 16px;
+  font-family: 'Poppins', sans-serif;
+  border: 1px solid #ccd3e0; /* Bordure subtile */
+  background-color: #ffffff; /* Fond clair */
+}
+
+form.layout-builder-configure-block input:focus,
+form.layout-builder-configure-block textarea:focus {
+  outline: none;
+  border-color: #5bc0de; /* Bordure bleue lors du focus */
+  box-shadow: 0 0 5px rgba(91, 192, 222, 0.5); /* Légère ombre bleue */
+}
+
+form.layout-builder-configure-block fieldset{
+  padding: 10px;
+}
+
+form.layout-builder-configure-block fieldset .fieldset-wrapper{ 
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+form.layout-builder-configure-block fieldset .js-form-item{
+  display: flex;
+  flex-direction: column;
+}
+
+/* Les titres des paragraphes */
+form.layout-builder-configure-block .paragraph-top {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  align-items: center;
+}
+
+/* Boutons principaux */
+form.layout-builder-configure-block input[type=submit] {
+  background-color: #212529;
+  border: none;
+  color: white;
+  border-radius: 4px;
+  padding: 8px 20px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  background-image: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: fit-content;
+}
+
+form.layout-builder-configure-block input[type=submit]:hover {
+  background-color: #343a40; /* Un gris foncé au survol */
+}
+
+/* Boutons secondaires */
+form.layout-builder-configure-block .paragraphs-actions input[type=submit] {
+  background-color: #ffffff;
+  border: 1px solid #212529;
+  color: #212529;
+  padding: 4px 8px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+  margin: 0;
+}
+
+form.layout-builder-configure-block .paragraphs-actions input[type=submit]:hover {
+  background-color: #f1f1f1;
+  border-color: #5bc0de; /* Bordure bleue au survol */
+}
+
+/* Cacher les légendes et labels inutiles */
+form.layout-builder-configure-block .paragraph-type--atomic-link legend,
+form.layout-builder-configure-block .paragraph-type--atomic-title label,
+form.layout-builder-configure-block .paragraph-type--atomic-description label {
+  display: none;
+}
+
+
+form.layout-builder-configure-block .js-media-library-item{
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 15px;
+}

@@ -17,14 +17,17 @@
     "require": {
         "composer/installers": "^2.3",
         "drupal/bootstrap": "^5.0",
+        "drupal/commerce": "^3.0",
         "drupal/core-composer-scaffold": "^11.1",
         "drupal/core-project-message": "^11.1",
         "drupal/core-recommended": "^11.1",
+        "drupal/gin_lb": "^1.0@RC",
         "drupal/layout_builder_admin_theme": "^2.0",
         "drupal/layout_builder_at": "^3.0",
         "drupal/layout_builder_modal": "^2.0",
         "drupal/layout_paragraphs": "^2.1",
         "drupal/mercury_editor": "^2.2",
+        "drupal/paragraph_blocks": "^4.1",
         "drupal/paragraphs": "^1.19",
         "drupal/paragraphs_ee": "^10.0",
         "drupal/twig_tweak": "^3.4",
@@ -33,7 +36,7 @@
     "conflict": {
         "drupal/drupal": "*"
     },
-    "minimum-stability": "stable",
+    "minimum-stability": "RC",
     "prefer-stable": true,
     "config": {
         "allow-plugins": {

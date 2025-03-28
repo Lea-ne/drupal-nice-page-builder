@@ -5,7 +5,7 @@
 {% set header_logo = image.uri.value|file_url %}
 
 {# Define footer social media menu #}
-{% set header_menu_entity = content.field_main_header_ref.0['#plain_text'] ?? '' %}
+{% set header_menu_entity = content.field_main_header_ref.0['#entity'].id ?? '' %}
 {% if header_menu_entity is not empty %}
     {% set header_menu = drupal_menu(header_menu_entity) %}
 {% endif %}

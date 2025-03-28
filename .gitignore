@@ -41,4 +41,5 @@ sites/simpletest
 # Ignore multi-site test environment.
 # simpletest
 sites/default/files/*
-sites/default/files/css
+
+web/sites/default/files/php
