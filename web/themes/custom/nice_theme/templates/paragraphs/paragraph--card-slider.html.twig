@@ -1,0 +1,15 @@
+{# Paragraph template for Section Three Column #}
+{% set items = [] %}
+{% for item in content.field_card_slider_container %}
+  {% if item['#paragraph'] %}
+    {% set items = items|merge([item]) %}
+  {% endif %}
+{% endfor %}
+
+
+{% set class = 'paragraph-type-card paragraph-type-card-slider paragraph-id-' ~ paragraph.id() %}
+
+{% include '@nice_theme/components/card_slider/card_slider.twig' with {
+  class: class,
+  items: items,
+} %} 

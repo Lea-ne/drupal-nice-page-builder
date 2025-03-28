@@ -1,0 +1,84 @@
+.component-footer .footer__container{
+    display: grid;
+    grid-template-columns: 1.1fr 3fr;
+    grid-template-rows: 1fr;
+    gap: 4rem;
+    color: white;
+    padding: 45px 0;
+}
+
+.component-footer .footer__brand-infos{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.component-footer .footer__brand-infos .footer__logo img{
+    width: 100%;
+    height: auto;
+}
+
+.component-footer .footer__brand-infos .footer__description{
+    font-size: 18px;
+}
+
+.component-footer .footer__brand-infos .footer__social-media ul{
+    display: flex;
+    gap: 10px;
+}
+
+.component-footer .footer__brand-infos .footer__cta{
+    padding-top: 1rem;
+}
+
+.component-footer .footer__menu{
+    display: flex;
+    justify-content: end;
+}
+
+.component-footer .footer__menu ul.nav{
+    display: flex;
+    gap: 2rem;
+}
+
+.component-footer .footer__menu ul.nav li.nav-item>a{
+    font-weight: 300;
+    font-size: 16px;
+    padding-bottom: 18px;
+    display: block;
+}
+
+/* only first level link */
+.component-footer .footer__menu ul.nav>li.nav-item{
+    min-width: 150px;
+    max-width: 315px;
+}
+.component-footer .footer__menu ul.nav>li.nav-item>a{
+    font-weight: 500;
+    font-size: 18px;
+    padding-bottom: 24px;
+}
+
+
+@media (max-width: 1200px) {
+
+    .component-footer .footer__container{
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+    }
+
+    .component-footer .footer__brand-infos{
+        max-width: 300px;
+    }
+
+    .component-footer .footer__menu{
+        justify-content: start;
+    }
+}
+
+@media (max-width: 768px) {
+    .component-footer .footer__menu ul.nav{
+        flex-direction: column;
+    }
+}

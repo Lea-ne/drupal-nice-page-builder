@@ -1,0 +1,19 @@
+.component-type-vertical-list .card__container{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.component-type-vertical-list .card__title{
+  background-color: #B17457;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.component-type-vertical-list .card__description{
+  font-size: 20px;
+  font-weight: 500;
+}
+

@@ -1,0 +1,46 @@
+.paragraph-type-card-slider {
+  width: 100%;
+  position: relative;
+  margin: 0 auto;
+  overflow: hidden;
+  max-width: 100%;
+}
+
+.paragraph-type-card-slider > .card__container {
+  width: 100%;
+  margin: 0 auto;
+  visibility: visible !important;
+}
+
+.paragraph-type-card-slider .swiper-slide {    
+  opacity: 1;
+  transition: opacity 0.3s ease;
+  width: 100% !important;
+  max-width: 100%;
+}
+
+.paragraph-type-card-slider .swiper-wrapper {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+
+.paragraph-type-card-slider .swiper-pagination {
+  bottom: 0 !important;
+  padding: 15px 0 !important;
+}
+
+.paragraph-type-card-slider .swiper-pagination-bullet {
+  width: 10px;
+  height: 10px;
+  margin: 0 5px;
+  background: #000;
+  opacity: 0.25;
+  transition: opacity 0.3s ease;
+}
+
+.paragraph-type-card-slider .swiper-pagination-bullet-active {
+  opacity: 1;
+  background: #000;
+}

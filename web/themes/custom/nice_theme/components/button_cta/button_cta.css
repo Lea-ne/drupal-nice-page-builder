@@ -1,0 +1,33 @@
+a.component-button-cta{
+  color: black;
+  border: 1px solid black;
+  display: block;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+a.component-button-cta:hover{
+  color: grey;
+  border-color: grey;
+}
+
+/* little arrow icon */
+a.component-button-cta::after{
+  content: "";
+  background-image: url("../../images/icons/link-arrow-black.svg");
+  width: 24px;
+  height: 24px;
+  display: block;
+  transform: rotate(45deg);
+}
+
+a.component-button-cta.white{
+  color: white;
+  border-color: white;
+}
+
+a.component-button-cta.white::after{
+  background-image: url("../../images/icons/link-arrow-white.svg");
+}

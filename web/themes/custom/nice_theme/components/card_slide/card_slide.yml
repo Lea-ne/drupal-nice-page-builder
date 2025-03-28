@@ -1,0 +1,13 @@
+name: Card Slide
+description: Basic Slide for a slider
+type: component
+schema:
+  properties:
+    title:
+      type: string
+    description:
+      type: string
+    media:
+      type: string
+    link:
+      type: string

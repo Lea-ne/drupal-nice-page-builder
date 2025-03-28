@@ -1,0 +1,13 @@
+{% set items = [] %}
+{% for item in content.field_card_list_container %}
+  {% if item['#paragraph'] %}
+    {% set items = items|merge([item]) %}
+  {% endif %}
+{% endfor %}
+
+{% set class = 'component-type-card component-type-vertical-list' %}
+
+{% include '@nice_theme/components/card_vertical_list/card_vertical_list.twig' with {
+  class: class,
+  items: items,
+} %} 

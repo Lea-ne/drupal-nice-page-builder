@@ -1,0 +1,30 @@
+<div class="component-footer">
+  <div class="footer__container">
+    
+    <!-- Bloc gauche : logo, texte et réseaux sociaux -->
+    <div class="footer__brand-infos">
+      <div class="footer__logo">
+        <img src="{{ footer_logo }}" alt="Logo" />
+      </div>
+      <div class="footer__description">
+        {{ text }}
+      </div>
+      <nav class="footer__social-media">
+        {{ social_media_menu }}
+      </nav>
+      <div class="footer__cta">
+        {% include '@nice_theme/components/button_cta/button_cta.twig' with {
+              link_url: cta_button_url,
+              link_title: cta_button_title,
+              color: 'white',
+          } %} 
+      </div>
+    </div>
+    
+    <!-- Bloc droit : menu principal à colonnes (2 niveaux) -->
+    <nav class="footer__menu">
+      {{ footer_menu }}
+    </nav>
+    
+  </div>
+</div>

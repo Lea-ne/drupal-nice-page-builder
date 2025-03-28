@@ -1,0 +1,14 @@
+{# Card Slider Component #}
+<div class="{{ class }}">
+  <div class="card__container swiper">
+    <div class="swiper-wrapper">
+      {% for item in items %}
+        <div class="swiper-slide">
+          {{ item }}
+        </div>
+      {% endfor %}
+    </div>
+    {# Pagination #}
+    <div class="swiper-pagination"></div>
+  </div>
+</div>

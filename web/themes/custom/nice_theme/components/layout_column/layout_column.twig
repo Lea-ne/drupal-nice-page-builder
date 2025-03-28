@@ -1,0 +1,17 @@
+{# Section Column Component #}
+<div class="{{ class }}">
+  <div class="section__container {{ container_value }}">
+
+    {% if title %}
+      <h2 class="section__title">
+        {{ title }}
+      </h2>
+    {% endif %}
+  
+    <div class="section__card-container column-{{ column_layout }}">
+      {% for item in items %}
+          {{ item }}
+      {% endfor %}
+    </div>
+  </div>
+</div> 

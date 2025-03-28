@@ -7,6 +7,25 @@ global-styling:
       css/style.css: { weight: 100 }
       css/colors.css: { weight: 99 }
 
+swiper:
+  version: 1.x
+  css:
+    theme:
+      js/vendor/swiper/swiper-bundle.min.css: {}
+  js:
+    js/vendor/swiper/swiper-bundle.min.js: {}
+  
+layout_column:
+  version: 1.x
+  css:
+    component:
+      components/layout_column/layout_column.css: {}
+
+footer:
+  version: 1.x
+  css:
+    component:
+      components/footer/footer.css: {}
 
 card_article:
   version: 1.x
@@ -19,6 +38,43 @@ card_article_background_image:
   css:
     component:
       components/card_article_background_image/card_article_background_image.css: {}
+
+card_slide:
+  version: 1.x
+  css:
+    component:
+      components/card_slide/card_slide.css: {}
+  js:
+    components/card_slide/card_slide.js: {}
+
+card_slider:
+  version: 1.x
+  css:
+    component:
+      components/card_slider/card_slider.css: {}
+  js:
+    components/card_slider/card_slider.js: {}
+
+card_vertical_list:
+  version: 1.x
+  css:
+    component:
+      components/card_vertical_list/card_vertical_list.css: {}
+  js:
+    components/card_vertical_list/card_vertical_list.js: {}
+
+button_cta:
+  version: 1.x
+  css:
+    component:
+      components/button_cta/button_cta.css: {}
+
+header:
+  version: 1.x
+  css:
+    component:
+      components/header/header.css: {}
+
 
 
 bootstrap:

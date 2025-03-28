@@ -1,0 +1,35 @@
+{# Define footer logo #}
+{% set block_content = content['#block_content'] %}
+{% set media_entity = block_content.field_footer_logo.0.entity %}
+{% set image = media_entity.field_media_image.entity %}
+{% set footer_logo = image.uri.value|file_url %}
+
+{# Define footer CTA #}
+{% set cta_button_url = content.field_cta_button[0]['#url'] %}
+{% set cta_button_title = content.field_cta_button[0]['#title'] %}
+
+
+{# Define footer description #}
+{% set text = content.field_little_descritpion %}
+
+{# Define footer social media menu #}
+{% set social_media_menu_entity = content.field_social_media_menu_ref.0['#plain_text'] ?? '' %}
+{% if social_media_menu_entity is not empty %}
+    {% set social_media_menu = drupal_menu(social_media_menu_entity) %}
+{% endif %}
+
+{# Define footer menu #}
+{% set footer_menu_entity = content.field_test.0['#plain_text'] ?? '' %}
+{% if footer_menu_entity is not empty %}
+    {% set footer_menu = drupal_menu(footer_menu_entity) %}
+{% endif %}
+
+
+{% include '@nice_theme/components/footer/footer.twig' with {
+    footer_menu: footer_menu,
+    social_media_menu: social_media_menu,
+    footer_logo: footer_logo,
+    text: text,
+    cta_button_url: cta_button_url,
+    cta_button_title: cta_button_title,
+} %} 

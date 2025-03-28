@@ -1,13 +1,13 @@
 {# Paragraph template for Card Basic Content #}
-{% set title = content.field_card_title %}
-{% set text = content.field_card_description %}
-{% set link = content.field_card_link %}
-{% set link_url = content.field_card_link[0]['#url'] %}
-{% set link_title = content.field_card_link[0]['#title'] %}
+{% set title = content.field_basic_title %}
+{% set text = content.field_basic_description %}
+{% set link = content.field_basic_link %}
+{% set link_url = content.field_basic_link[0]['#url'] %}
+{% set link_title = content.field_basic_link[0]['#title'] %}
 
 
 {# Define media #}
-{% set media_entity = paragraph.field_card_media.entity %}
+{% set media_entity = paragraph.field_basic_media.entity %}
 {% set image = media_entity.field_media_image.entity %}
 {% set media = image.uri.value|file_url %}
 

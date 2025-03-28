@@ -1597,6 +1597,311 @@
             "install-path": "../../web/modules/contrib/entity_reference_revisions"
         },
         {
+            "name": "drupal/layout_builder_admin_theme",
+            "version": "2.0.2",
+            "version_normalized": "2.0.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/layout_builder_admin_theme.git",
+                "reference": "2.0.2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/layout_builder_admin_theme-2.0.2.zip",
+                "reference": "2.0.2",
+                "shasum": "331d2a3d7f8b5130268ae089d03bcae59c1b7544"
+            },
+            "require": {
+                "drupal/core": "^9 || ^10 || ^11"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "2.0.2",
+                    "datestamp": "1723183931",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "installation-source": "dist",
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "ivnish",
+                    "homepage": "https://www.drupal.org/user/3547706"
+                },
+                {
+                    "name": "robert.duplock",
+                    "homepage": "https://www.drupal.org/user/3645985"
+                }
+            ],
+            "description": "Makes your Drupal site use the admin theme when using \"Layout builder\".",
+            "homepage": "https://www.drupal.org/project/layout_builder_admin_theme",
+            "support": {
+                "source": "https://git.drupalcode.org/project/layout_builder_admin_theme"
+            },
+            "install-path": "../../web/modules/contrib/layout_builder_admin_theme"
+        },
+        {
+            "name": "drupal/layout_builder_at",
+            "version": "3.0.0",
+            "version_normalized": "3.0.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/layout_builder_at.git",
+                "reference": "3.0.0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/layout_builder_at-3.0.0.zip",
+                "reference": "3.0.0",
+                "shasum": "aec5e48e7efe97b1be675307c37e7d43a88701a9"
+            },
+            "require": {
+                "drupal/core": "^10.2 || ^11"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "3.0.0",
+                    "datestamp": "1741879094",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "installation-source": "dist",
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Kristof De Jaeger (swentel)",
+                    "homepage": "https://www.drupal.org/u/swentel",
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "svendecabooter",
+                    "homepage": "https://www.drupal.org/user/35369"
+                }
+            ],
+            "description": "Layout Builder Asymmetric Translation",
+            "homepage": "https://www.drupal.org/project/layout_builder_at",
+            "support": {
+                "source": "https://git.drupalcode.org/project/layout_builder_at",
+                "issues": "https://www.drupal.org/project/issues/layout_builder_at",
+                "irc": "irc://irc.freenode.org/drupal-contribute"
+            },
+            "install-path": "../../web/modules/contrib/layout_builder_at"
+        },
+        {
+            "name": "drupal/layout_builder_modal",
+            "version": "2.0.0",
+            "version_normalized": "2.0.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/layout_builder_modal.git",
+                "reference": "2.0.0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/layout_builder_modal-2.0.0.zip",
+                "reference": "2.0.0",
+                "shasum": "0ef138ccf387a8e0a39fccd84d15f5998146a72d"
+            },
+            "require": {
+                "drupal/core": "^9.5 || ^10.2 || ^11"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "2.0.0",
+                    "datestamp": "1729141959",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "installation-source": "dist",
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "John Svensson",
+                    "homepage": "https://www.drupal.org/u/johndevman",
+                    "email": "john@kodamera.se",
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "Emil Johnsson",
+                    "homepage": "https://www.drupal.org/u/johnzzon",
+                    "email": "emil@kodamera.se",
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "Henrik Larsson",
+                    "homepage": "https://www.drupal.org/u/henriklarsson",
+                    "email": "henrik@kodamera.se",
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "twfahey",
+                    "homepage": "https://www.drupal.org/user/3403722"
+                }
+            ],
+            "description": "Open blocks in a modal in the Layout Builder UI.",
+            "homepage": "https://www.drupal.org/project/layout_builder_modal",
+            "support": {
+                "source": "http://cgit.drupalcode.org/layout_builder_modal",
+                "issues": "https://www.drupal.org/project/issues/layout_builder_modal"
+            },
+            "install-path": "../../web/modules/contrib/layout_builder_modal"
+        },
+        {
+            "name": "drupal/layout_paragraphs",
+            "version": "2.1.1",
+            "version_normalized": "2.1.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/layout_paragraphs.git",
+                "reference": "2.1.1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/layout_paragraphs-2.1.1.zip",
+                "reference": "2.1.1",
+                "shasum": "6fc90954c67939933a6eb24000892822715e4f90"
+            },
+            "require": {
+                "drupal/core": "^10 || ^11",
+                "drupal/paragraphs": "^1.6"
+            },
+            "require-dev": {
+                "drupal/block_field": "~1.0",
+                "drupal/entity_usage": "2.x-dev",
+                "drupal/paragraphs-paragraphs_library": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "2.1.1",
+                    "datestamp": "1732724895",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "installation-source": "dist",
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "itamair",
+                    "homepage": "https://www.drupal.org/user/1179076"
+                },
+                {
+                    "name": "justin2pin",
+                    "homepage": "https://www.drupal.org/user/278450"
+                },
+                {
+                    "name": "pixelwhip",
+                    "homepage": "https://www.drupal.org/user/275292"
+                },
+                {
+                    "name": "sethhill",
+                    "homepage": "https://www.drupal.org/user/676480"
+                }
+            ],
+            "description": "Layout Paragraphs",
+            "homepage": "https://www.drupal.org/project/layout_paragraphs",
+            "keywords": [
+                "Drupal"
+            ],
+            "support": {
+                "source": "http://cgit.drupalcode.org/layout_paragraphs",
+                "issues": "https://www.drupal.org/project/issues/layout_paragraphs"
+            },
+            "install-path": "../../web/modules/contrib/layout_paragraphs"
+        },
+        {
+            "name": "drupal/mercury_editor",
+            "version": "2.2.1",
+            "version_normalized": "2.2.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/mercury_editor.git",
+                "reference": "2.2.1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/mercury_editor-2.2.1.zip",
+                "reference": "2.2.1",
+                "shasum": "3f3807a04014b3b9f6f62d210b98b7b72c96328d"
+            },
+            "require": {
+                "drupal/core": "^10.3 || ^11",
+                "drupal/layout_paragraphs": ">=2.1 <2.2",
+                "drupal/style_options": "^1",
+                "php": ">=8.1"
+            },
+            "require-dev": {
+                "drupal/layout_paragraphs": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "2.2.1",
+                    "datestamp": "1738258276",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "installation-source": "dist",
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "justin2pin",
+                    "homepage": "https://www.drupal.org/user/278450"
+                },
+                {
+                    "name": "pixelwhip",
+                    "homepage": "https://www.drupal.org/user/275292"
+                },
+                {
+                    "name": "sethhill",
+                    "homepage": "https://www.drupal.org/user/676480"
+                }
+            ],
+            "description": "Mercury Editor",
+            "homepage": "https://drupal.org/project/mercury_editor",
+            "keywords": [
+                "Drupal"
+            ],
+            "support": {
+                "source": "https://git.drupalcode.org/project/mercury_editor",
+                "issues": "https://www.drupal.org/project/issues/mercury_editor"
+            },
+            "install-path": "../../web/modules/contrib/mercury_editor"
+        },
+        {
             "name": "drupal/paragraphs",
             "version": "1.19.0",
             "version_normalized": "1.19.0.0",
@@ -1679,6 +1984,187 @@
                 "source": "https://git.drupalcode.org/project/paragraphs"
             },
             "install-path": "../../web/modules/contrib/paragraphs"
+        },
+        {
+            "name": "drupal/paragraphs_ee",
+            "version": "10.0.6",
+            "version_normalized": "10.0.6.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/paragraphs_ee.git",
+                "reference": "10.0.6"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/paragraphs_ee-10.0.6.zip",
+                "reference": "10.0.6",
+                "shasum": "4b04602b6cda074b86c77a8e6d64f82350818dba"
+            },
+            "require": {
+                "drupal/core": ">=10.0",
+                "drupal/paragraphs_features": "^2.0"
+            },
+            "require-dev": {
+                "drupal/paragraphs_sets": "*",
+                "phpunit/phpunit": "^9.5",
+                "weitzman/drupal-test-traits": "^1.5"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "10.0.6",
+                    "datestamp": "1741108032",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "installation-source": "dist",
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Stefan Borchert",
+                    "homepage": "https://www.drupal.org/user/36942",
+                    "email": "stefan.borchert@undpaul.de"
+                }
+            ],
+            "description": "Paragraphs Editor Enhancements for better usability.",
+            "homepage": "https://www.drupal.org/project/paragraphs_ee",
+            "support": {
+                "source": "https://git.drupalcode.org/project/paragraphs_ee"
+            },
+            "install-path": "../../web/modules/contrib/paragraphs_ee"
+        },
+        {
+            "name": "drupal/paragraphs_features",
+            "version": "2.1.0",
+            "version_normalized": "2.1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/paragraphs_features.git",
+                "reference": "2.1.0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/paragraphs_features-2.1.0.zip",
+                "reference": "2.1.0",
+                "shasum": "1e82c20d5fdcbff8615af7d6797f272e85610496"
+            },
+            "require": {
+                "drupal/core": "^9.2 || ^10 || ^11",
+                "drupal/paragraphs": "^1.13"
+            },
+            "require-dev": {
+                "drupal/gin": "^3.0"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "2.1.0",
+                    "datestamp": "1736258966",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "installation-source": "dist",
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Mladen Todorovic",
+                    "homepage": "https://www.drupal.org/user/2103716",
+                    "email": "mladen.todorovic@burda.com"
+                },
+                {
+                    "name": "Daniel Bosen",
+                    "homepage": "https://www.drupal.org/user/404865",
+                    "email": "daniel.bosen@burda.com"
+                },
+                {
+                    "name": "Christian Fritsch",
+                    "homepage": "https://www.drupal.org/user/3511180",
+                    "email": "christian.fritsch@burda.com"
+                },
+                {
+                    "name": "Volker Killesreiter",
+                    "homepage": "https://www.drupal.org/user/57527",
+                    "email": "volker.killesreiter@burda.com"
+                },
+                {
+                    "name": "Alex Pott",
+                    "email": "alex.a.pott@gmail.com"
+                }
+            ],
+            "description": "Paragraphs features for extending paragraphs widget functionality.",
+            "homepage": "https://www.drupal.org/project/paragraphs_features",
+            "support": {
+                "source": "https://git.drupalcode.org/project/paragraphs_features"
+            },
+            "install-path": "../../web/modules/contrib/paragraphs_features"
+        },
+        {
+            "name": "drupal/style_options",
+            "version": "1.1.1",
+            "version_normalized": "1.1.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/style_options.git",
+                "reference": "1.1.1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/style_options-1.1.1.zip",
+                "reference": "1.1.1",
+                "shasum": "2ccd4a53c1347c1df6b9593bc6939b39e3a633df"
+            },
+            "require": {
+                "drupal/core": "^9.2 || ^10 || ^11"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "1.1.1",
+                    "datestamp": "1732200511",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "installation-source": "dist",
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "justin2pin",
+                    "homepage": "https://www.drupal.org/user/278450"
+                },
+                {
+                    "name": "pixelwhip",
+                    "homepage": "https://www.drupal.org/user/275292"
+                },
+                {
+                    "name": "sethhill",
+                    "homepage": "https://www.drupal.org/user/676480"
+                }
+            ],
+            "description": "Provide an API to reuse style options throughout the Drupal ecosystem.",
+            "homepage": "http://drupal.org/project/style_options",
+            "support": {
+                "source": "https://git.drupalcode.org/project/style_options",
+                "issues": "https://www.drupal.org/project/issues/style_options"
+            },
+            "install-path": "../../web/modules/contrib/style_options"
         },
         {
             "name": "drupal/twig_tweak",

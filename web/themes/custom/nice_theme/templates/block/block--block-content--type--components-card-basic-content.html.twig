@@ -1,0 +1,42 @@
+{# Paragraph template for Card Basic Content #}
+{% set title = content.field_card_basic_title %}
+{% set text = content.field_card_basic_description %}
+{% set link = content.field_card_basic_link %}
+{% set link_url = content.field_card_basic_link[0]['#url'] %}
+{% set link_title = content.field_card_basic_link[0]['#title'] %}
+
+{# Define media #}
+{% set block_content = content['#block_content'] %}
+{% set media_entity = block_content.field_card_basic_media.0.entity %}
+{% set image = media_entity.field_media_image.entity %}
+{% set media = image.uri.value|file_url %}
+
+{# Define card render #}
+{% set card_render = content.field_card_basic_content_render.0['#markup'] %}
+
+{# Define universal class for all cards #}
+{% set class = "paragraph-card paragraph-card-basic-content paragraph-id-" ~ paragraph.id() %}
+
+
+{% if card_render == 'card_article' %}
+
+    {% include '@nice_theme/components/card_article/card_article.twig' with {
+        class: class ~ ' paragraph-card-article',
+        title: title,
+        text: text,
+        media: media,
+        link: link
+    } %} 
+
+{% elseif card_render == 'card_article_background_image' %}
+
+    {% include '@nice_theme/components/card_article_background_image/card_article_background_image.twig' with {
+        class: class ~ ' paragraph-card-article_background_image',
+        title: title,
+        text: text,
+        media: media,
+        link_url: link_url,
+        link_title: link_title,
+    } %} 
+
+{% endif %}

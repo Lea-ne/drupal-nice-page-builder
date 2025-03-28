@@ -1,0 +1,16 @@
+{# Define footer logo #}
+{% set block_content = content['#block_content'] %}
+{% set media_entity = block_content.field_footer_logo.0.entity %}
+{% set image = media_entity.field_media_image.entity %}
+{% set header_logo = image.uri.value|file_url %}
+
+{# Define footer social media menu #}
+{% set header_menu_entity = content.field_main_header_ref.0['#plain_text'] ?? '' %}
+{% if header_menu_entity is not empty %}
+    {% set header_menu = drupal_menu(header_menu_entity) %}
+{% endif %}
+
+{% include '@nice_theme/components/header/header.twig' with {
+    header_logo: header_logo,
+    header_menu: header_menu,
+} %} 

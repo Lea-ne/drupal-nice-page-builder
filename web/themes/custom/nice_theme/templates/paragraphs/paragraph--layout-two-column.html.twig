@@ -1,0 +1,22 @@
+{# Paragraph template for Section Two Column #}
+{% set items = [] %}
+{% for item in content.field_layout_two_col_container %}
+  {% if item['#paragraph'] %}
+    {% set items = items|merge([item]) %}
+  {% endif %}
+{% endfor %}
+
+
+{% set title = content.field_section_title %}
+{% set use_container = content.field_boolean_column_container.0['#markup'] == 'On' %}
+{% set class = 'paragraph-type-layout paragraph-type-layout-two-column paragraph-id-' ~ paragraph.id() %}
+{% set column_layout = 2 %}
+
+{% include '@nice_theme/components/layout_column/layout_column.twig' with {
+  class: class,
+  column_layout: column_layout,
+  title: title,
+  items: items,
+  container_value: use_container ? 'page-container' : '',
+} %} 
+
