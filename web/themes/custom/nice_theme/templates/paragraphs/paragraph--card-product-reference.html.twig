@@ -1,0 +1,21 @@
+{# Acess to product entity #}
+{% set product_entity = paragraph.field_product_reference.entity %}
+
+{# Get field values #}
+{% set product_title = product_entity.title.value %}
+{% set product_price = product_entity.field_product_price.0.number %}
+{% set product_image = product_entity.field_main_product_image.entity.uri.value|file_url %}
+{% set product_link = path('entity.commerce_product.canonical', {'commerce_product': product_entity.id()}) %}
+
+{# Class & Attributes #}
+{% set class = "component-card component-type-card-product" %}
+
+{% if product_entity.status.value == "1" %}
+    {% include '@nice_theme/components/card_product/card_product.twig' with {
+        class: class,
+        title: product_title,
+        text: product_price,
+        media: product_image,
+        link_url: product_link,
+    } %} 
+{% endif %}

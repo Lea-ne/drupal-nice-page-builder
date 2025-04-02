@@ -75,7 +75,11 @@ header:
     component:
       components/header/header.css: {}
 
-
+card_product: 
+  version: 1.x
+  css:
+    component:
+      components/card_product/card_product.css: {}
 
 bootstrap:
   js:

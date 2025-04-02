@@ -1,0 +1,28 @@
+.component-type-card-product{
+  border: 1px solid black;
+}
+
+.component-type-card-product .card__container{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.component-type-card-product .card__media{
+  width: 100%;
+  height: 300px;
+}
+
+.component-type-card-product .card__media img{
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.component-type-card-product .card__content{
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding-top: 10px;
+  border-top: 1px solid black;
+}

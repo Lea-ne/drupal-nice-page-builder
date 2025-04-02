@@ -1,0 +1,33 @@
+{# Card Article Component #}
+<div class="{{ class }} paragraph-card">
+  <div class="card__container">
+
+    {% if media %}
+      <div class="card__media">
+        <img src="{{ media }}" alt="{{ media_alt }}">
+      </div>
+    {% endif %}
+    
+    <div class="card__content">
+
+      {% if title %}
+        <h3 class="card__title">
+          {{ title }}
+        </h3>
+      {% endif %}
+      
+      {% if text %}
+        <div class="card__text">
+          {{ text }}
+        </div>
+      {% endif %}
+
+      {% if link_url %}
+        <div class="card__link article-link">
+         <a href="{{ link_url }}">{{'See product'|t}}</a>
+        </div>
+      {% endif %}
+
+    </div>
+  </div>
+</div> 

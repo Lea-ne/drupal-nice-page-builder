@@ -8,7 +8,7 @@ use Drupal\custom_layouts\Plugin\Layout\CustomLayoutBase;
  * Provides a five-column layout.
  *
  * @Layout(
- *   id = "layout__five_column",
+ *   id = "layout--five-column",
  *   label = @Translation("Five Columns"),
  *   category = @Translation("Custom"),
  *   path = "layouts",

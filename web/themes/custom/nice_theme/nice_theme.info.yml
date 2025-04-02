@@ -16,6 +16,7 @@ libraries:
   - nice_theme/footer
   - nice_theme/button_cta
   - nice_theme/header
+  - nice_theme/card_product
   
 regions:
   top_header: 'Top header'

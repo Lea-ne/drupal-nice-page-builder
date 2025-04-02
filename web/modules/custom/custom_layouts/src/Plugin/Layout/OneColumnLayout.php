@@ -8,7 +8,7 @@ use Drupal\custom_layouts\Plugin\Layout\CustomLayoutBase;
  * Provides a one-column layout.
  *
  * @Layout(
- *   id = "layout__one_column",
+ *   id = "layout--one-column",
  *   label = @Translation("One Column"),
  *   category = @Translation("Custom"),
  *   path = "layouts",

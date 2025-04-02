@@ -1,0 +1,13 @@
+name: Card Article
+description: Basic card article
+type: component
+schema:
+  properties:
+    title:
+      type: string
+    description:
+      type: string
+    media:
+      type: string
+    link:
+      type: string
